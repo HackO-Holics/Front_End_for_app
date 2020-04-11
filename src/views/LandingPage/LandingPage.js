@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
+import { Animated } from "react-animated-css";
+import ScrollAnimation, {ScrollAnimationProps} from 'react-animate-on-scroll'
 
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-
 import Favorite from "@material-ui/icons/Favorite";
 // core components
 import Header from "components/Header/Header.js";
@@ -46,23 +47,39 @@ export default function LandingPage({ ...rest }) {
       />
       <Parallax image={require("assets/img/bgmain.jpg")} filter="dark">
         <div className={classes.container}>
+        <Animated
+            animationIn="fadeInUp"
+            animationInDelay= {500}
+            isVisible={true}
+        >
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}>
+            
               <h1 className={classes.title}>Fake News Detector and Genuine News Generator</h1>
+              
               <h4>
                 This app uses cutting edge machine learning algorithms to predict
                 wheater the news article entered by user is real or fake.
               </h4>
+            
             </GridItem>
           </GridContainer>
+          </Animated>
         </div>
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <SectionProduct />
+          <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown">
           <SectionWork />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown"> 
           <GenNews/>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown">
           <SectionTeam />
+          </ScrollAnimation>
+          
         </div>
       </div>
       <Footer

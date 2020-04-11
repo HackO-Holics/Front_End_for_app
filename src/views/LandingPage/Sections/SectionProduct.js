@@ -1,7 +1,7 @@
 import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-
+import ScrollAnimation, {ScrollAnimationProps} from 'react-animate-on-scroll'
 // @material-ui/icons
 import VerifiedUser from "@material-ui/icons/VerifiedUser";
 import Fingerprint from "@material-ui/icons/Fingerprint";
@@ -21,15 +21,20 @@ export default function SectionProduct() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={8} md={8}>
+          <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown">
           <h2 className={classes.title}>Let{"'"}s talk about it</h2>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown">
           <h5 className={classes.description}>
             Fake news is nothing new. But bogus stories can reach more people more quickly via social media than what good old-fashioned viral emails could accomplish in years past.
             A lot of these viral claims aren’t “news” at all, but fiction, satire and efforts to fool readers into thinking they’re for real.
             Therefore we developed this app for fighting this disease of fake news.This app will provide you with-
           </h5>
+          </ScrollAnimation>
         </GridItem>
       </GridContainer>
       <div>
+        <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown">
         <GridContainer>
         {/* <GridItem xs={12} sm={4} md={4}>
              <InfoArea
@@ -40,6 +45,7 @@ export default function SectionProduct() {
               vertical
             />
           </GridItem> */}
+          
           <GridItem xs={12} sm={6} md={6}>
             <InfoArea
               title="Great Accuracy"
@@ -59,6 +65,7 @@ export default function SectionProduct() {
             />
           </GridItem>
         </GridContainer>
+        </ScrollAnimation>
       </div>
     </div>
   );
