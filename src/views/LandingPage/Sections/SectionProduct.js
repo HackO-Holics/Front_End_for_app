@@ -21,10 +21,10 @@ export default function SectionProduct() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={8} md={8}>
-          <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown">
+          <ScrollAnimation animateIn="fadeInUp">
           <h2 className={classes.title}>Let{"'"}s talk about it</h2>
           </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown">
+          <ScrollAnimation animateIn="fadeInUp">
           <h5 className={classes.description}>
             Fake news is nothing new. But bogus stories can reach more people more quickly via social media than what good old-fashioned viral emails could accomplish in years past.
             A lot of these viral claims aren’t “news” at all, but fiction, satire and efforts to fool readers into thinking they’re for real.
@@ -34,7 +34,7 @@ export default function SectionProduct() {
         </GridItem>
       </GridContainer>
       <div>
-        <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown">
+        <ScrollAnimation animateIn="fadeInUp">
         <GridContainer>
         {/* <GridItem xs={12} sm={4} md={4}>
              <InfoArea

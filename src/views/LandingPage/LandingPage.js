@@ -49,7 +49,7 @@ export default function LandingPage({ ...rest }) {
         <div className={classes.container}>
         <Animated
             animationIn="fadeInUp"
-            animationInDelay= {500}
+            animationInDelay= {1500}
             isVisible={true}
         >
           <GridContainer>
@@ -70,13 +70,10 @@ export default function LandingPage({ ...rest }) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <SectionProduct />
-          <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown">
+          <ScrollAnimation animateIn="fadeInUp">
           <SectionWork />
           </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown"> 
-          <GenNews/>
-          </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown">
+          <ScrollAnimation animateIn="fadeInUp">
           <SectionTeam />
           </ScrollAnimation>
           
@@ -89,11 +86,10 @@ export default function LandingPage({ ...rest }) {
               <List className={classes.list}>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="#"
-                    target="_blank"
+                    href="mailto:teamhackoholic@gmail.com"
                     className={classes.block}
                   >
-                    Hackoholics
+                    Mail Us!
                   </a>
                 </ListItem>
               </List>
@@ -102,8 +98,8 @@ export default function LandingPage({ ...rest }) {
               &copy; {1900 + new Date().getYear()} , made with{" "}
               <Favorite className={classes.icon} /> by{" "}
               <a
-                href="#"
-                target="_blank"
+                href="mailto:teamhackoholic@gmail.com"
+                className={classes.block}
               >
                 Team Hackoholics
               </a>

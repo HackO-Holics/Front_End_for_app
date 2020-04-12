@@ -12,10 +12,6 @@ import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
 import Muted from "components/Typography/Muted.js";
 import Button from "components/CustomButtons/Button.js";
-
-import cardProfile1Square from "assets/img/faces/card-profile1-square.jpg";
-import cardProfile2Square from "assets/img/faces/card-profile2-square.jpg";
-import cardProfile4Square from "assets/img/faces/card-profile4-square.jpg";
 import cardProfile6Square from "assets/img/faces/card-profile6-square.jpg";
 
 import teamsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/teamsStyle.js";
@@ -36,6 +32,7 @@ export default function SectionTeam() {
   return (
     <div className={classes.section}>
       <h2 className={classes.title}>Here is our team</h2>
+      <h4 className={classes.title}>Our Moto: To provide better solutions to current and future problems</h4>
       <div>
         <GridContainer>
           <GridItem xs={12} sm={6} md={6}>
@@ -44,12 +41,12 @@ export default function SectionTeam() {
                 <GridItem xs={12} sm={5} md={5}>
                   <CardHeader image plain>
                     <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <img src={cardProfile1Square} alt="..." />
+                      <img src={require('../../../assets/img/team/dpscaptain.jpg')} alt="..." />
                     </a>
                     <div
                       className={classes.coloredShadow}
                       style={{
-                        backgroundImage: `url(${cardProfile1Square})`,
+                        backgroundImage: `url(${require('../../../assets/img/team/dpscaptain.jpg')})`,
                         opacity: "1"
                       }}
                     />
@@ -59,17 +56,17 @@ export default function SectionTeam() {
                   <CardBody plain>
                     <h4 className={classes.cardTitle}>Shivam Singhal</h4>
                     <Muted>
-                      <h6 className={classes.cardCategory}>CAPTAIN</h6>
+                      <h6 className={classes.cardCategory}>Captain and Backend Developer </h6>
                     </Muted>
                   </CardBody>
                   <CardFooter plain className={classes.justifyContentCenter}>
-                    <Button justIcon simple color="linkedin">
+                    <Button justIcon simple color="linkedin" href="https://www.linkedin.com/in/shivam-singhal-682321175/">
                       <i className="fab fa-linkedin" />
                     </Button>
-                    <Button justIcon simple color="facebook">
-                      <i className="fab fa-facebook-square" />
+                    <Button justIcon simple color="instagram" href="https://www.instagram.com/shivam_singhal.10/">
+                      <i className="fab fa-instagram" />
                     </Button>
-                    <Button justIcon simple color="github">
+                    <Button justIcon simple color="github" href="https://github.com/ShivamSinghal1">
                       <i className="fab fa-github" />
                     </Button>
                   </CardFooter>
@@ -83,12 +80,12 @@ export default function SectionTeam() {
                 <GridItem xs={12} sm={5} md={5}>
                   <CardHeader image plain>
                     <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <img src={cardProfile6Square} alt="..." />
+                      <img src={require('../../../assets/img/team/dpsnone.jpg')} alt="..." />
                     </a>
                     <div
                       className={classes.coloredShadow}
                       style={{
-                        backgroundImage: `url(${cardProfile6Square})`,
+                        backgroundImage: `url(${require('../../../assets/img/team/dpsnone.jpg')})`,
                         opacity: "1"
                       }}
                     />
@@ -96,23 +93,19 @@ export default function SectionTeam() {
                 </GridItem>
                 <GridItem xs={12} sm={7} md={7}>
                   <CardBody plain>
-                    <h4 className={classes.cardTitle}>Kendall Andrew</h4>
+                    <h4 className={classes.cardTitle}>Saurabh Kumar</h4>
                     <Muted>
-                      <h6 className={classes.cardCategory}>GRAPHIC DESIGNER</h6>
+                      <h6 className={classes.cardCategory}>ML Engineer</h6>
                     </Muted>
-                    <p className={classes.description}>
-                      Don{"'"}t be scared of the truth because we need to
-                      restart the human foundation in truth...
-                    </p>
                   </CardBody>
                   <CardFooter plain className={classes.justifyContentCenter}>
-                    <Button justIcon simple color="linkedin">
+                    <Button justIcon simple color="linkedin" href="#">
                       <i className="fab fa-linkedin" />
                     </Button>
-                    <Button justIcon simple color="facebook">
-                      <i className="fab fa-facebook-square" />
+                    <Button justIcon simple color="facebook" href="#">
+                      <i className="fab fa-instagram" />
                     </Button>
-                    <Button justIcon simple color="github">
+                    <Button justIcon simple color="github" href="https://github.com/saturn660">
                       <i className="fab fa-github" />
                     </Button>
                   </CardFooter>
@@ -126,12 +119,12 @@ export default function SectionTeam() {
                 <GridItem xs={12} sm={5} md={5}>
                   <CardHeader image plain>
                     <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <img src={cardProfile4Square} alt="..." />
+                      <img src={require('../../../assets/img/team/dpsbackend.jpg')} alt="..." />
                     </a>
                     <div
                       className={classes.coloredShadow}
                       style={{
-                        backgroundImage: `url(${cardProfile4Square})`,
+                        backgroundImage: `url(${require('../../../assets/img/team/dpsbackend.jpg')})`,
                         opacity: "1"
                       }}
                     />
@@ -141,17 +134,17 @@ export default function SectionTeam() {
                   <CardBody plain>
                     <h4 className={classes.cardTitle}>Anunay Gupta</h4>
                     <Muted>
-                      <h6 className={classes.cardCategory}>Backend Developer</h6>
+                      <h6 className={classes.cardCategory}>Backend Developer and ML Engineer</h6>
                     </Muted>
                   </CardBody>
                   <CardFooter plain className={classes.justifyContentCenter}>
-                    <Button justIcon simple color="linkedin">
+                    <Button justIcon simple color="linkedin" href="https://www.linkedin.com/in/anunay-gupta-46362216b/">
                       <i className="fab fa-linkedin" />
                     </Button>
-                    <Button justIcon simple color="facebook">
+                    <Button justIcon simple color="facebook" href="https://www.facebook.com/anunay.gupta.92">
                       <i className="fab fa-facebook-square" />
                     </Button>
-                    <Button justIcon simple color="github">
+                    <Button justIcon simple color="github" href="https://github.com/AnunayGupta">
                       <i className="fab fa-github" />
                     </Button>
                   </CardFooter>
@@ -165,12 +158,12 @@ export default function SectionTeam() {
                 <GridItem xs={12} sm={5} md={5}>
                   <CardHeader image plain>
                     <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <img src={cardProfile2Square} alt="..." />
+                      <img src={require('../../../assets/img/team/dpsmain2.jpg')} alt="Shreyansh Gupta"/>
                     </a>
                     <div
                       className={classes.coloredShadow}
                       style={{
-                        backgroundImage: `url(${cardProfile2Square})`,
+                        backgroundImage: `url(${require('../../../assets/img/team/dpsmain.jpg')})`,
                         opacity: "1"
                       }}
                     />
@@ -180,17 +173,17 @@ export default function SectionTeam() {
                   <CardBody plain>
                     <h4 className={classes.cardTitle}>Shreyansh Gupta</h4>
                     <Muted>
-                      <h6 className={classes.cardCategory}>Front-End Developer</h6>
+                      <h6 className={classes.cardCategory}>Front-End Developer and ML Engineer</h6>
                     </Muted>
                   </CardBody>
                   <CardFooter plain className={classes.justifyContentCenter}>
-                    <Button justIcon simple color="linkedin">
+                    <Button justIcon simple color="linkedin" href="https://www.linkedin.com/in/shreyansh-gupta-b33b41173">
                       <i className="fab fa-linkedin" />
                     </Button>
-                    <Button justIcon simple color="facebook">
+                    <Button justIcon simple color="facebook" href="https://www.facebook.com/shreyansh.gupta.18/">
                       <i className="fab fa-facebook-square" />
                     </Button>
-                    <Button justIcon simple color="github">
+                    <Button justIcon simple color="github" href="https://github.com/mrFahrenhiet">
                       <i className="fab fa-github" />
                     </Button>
                   </CardFooter>
