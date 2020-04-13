@@ -1,6 +1,6 @@
-import React, {useState,useEffect} from "react";
+import React from "react";
 // @material-ui/core components
-import { makeStyles, withStyles } from "@material-ui/core/styles";
+import {  withStyles } from "@material-ui/core/styles";
 import './textarea.scss';
 import './loading.scss';
 import axios from 'axios';
@@ -11,7 +11,6 @@ import {Animated} from 'react-animated-css';
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import CustomInput from "components/CustomInput/CustomInput.js";
 import Button from "components/CustomButtons/Button.js";
 
 import workStyle from "assets/jss/material-kit-pro-react/views/landingPageSections/workStyle.js";
@@ -36,7 +35,7 @@ class SectionWork extends React.Component {
       loaded: 0
     })
     const data = {"message": this.state.message}
-    axios.post('http://127.0.0.1:5000/api', data).then(res=>{
+    axios.post('https://fake-real-news-api.herokuapp.com/api', data).then(res=>{
       console.log(res.data)
       this.setState({
         data: res.data,
@@ -80,13 +79,13 @@ class SectionWork extends React.Component {
               {this.state.loaded===1?(this.state.data.prediction===0?
                 (<div>
                   <Animated animationIn='fadeIn' animationInDelay={600}>
-                  <h3 className={classes.title + " " + classes.textCenter}>The News Entered was Genuinin</h3><br/>
+                  <h3 className={classes.title + " " + classes.textCenter}>The News Entered was Genuine</h3><br/>
                   <h4 className={classes.title + " " + classes.textCenter}>Here are some more related news</h4>
                   </Animated>
                 </div>):(<div>
                   <Animated animationIn='fadeIn' animationInDelay={600}>
                   <h3 className={classes.title + " " + classes.textCenter}>The News Entered was Fake</h3><br/>
-                  <h4 className={classes.title + " " + classes.textCenter}>But here are some genunin news related to the matter</h4>
+                  <h4 className={classes.title + " " + classes.textCenter}>But here are some genuine news related to the matter</h4>
                   </Animated>
                 </div>)):
                 (this.state.loaded===0?(
@@ -103,6 +102,9 @@ class SectionWork extends React.Component {
                 <span>I</span>
                 <span>N</span>
                 <span>G</span>
+                <span>.</span>
+                <span>.</span>
+                <span>.</span>
               </div>
               </Animated>):null)}
             </GridItem>

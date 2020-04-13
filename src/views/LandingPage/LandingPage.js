@@ -1,8 +1,7 @@
 import React from "react";
-import PropTypes from "prop-types";
 import classNames from "classnames";
 import { Animated } from "react-animated-css";
-import ScrollAnimation, {ScrollAnimationProps} from 'react-animate-on-scroll'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
@@ -13,8 +12,6 @@ import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import Button from "components/CustomButtons/Button.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.js";
@@ -23,7 +20,6 @@ import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPag
 import SectionProduct from "./Sections/SectionProduct.js";
 import SectionTeam from "./Sections/SectionTeam.js";
 import SectionWork from "./Sections/SectionWork.js";
-import GenNews from "./Sections/SectionGenunieNews.js";
 
 const useStyles = makeStyles(landingPageStyle);
 

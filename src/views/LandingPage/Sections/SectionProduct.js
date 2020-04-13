@@ -1,10 +1,9 @@
 import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-import ScrollAnimation, {ScrollAnimationProps} from 'react-animate-on-scroll'
+import ScrollAnimation from 'react-animate-on-scroll'
 // @material-ui/icons
 import VerifiedUser from "@material-ui/icons/VerifiedUser";
-import Fingerprint from "@material-ui/icons/Fingerprint";
 import Grade from '@material-ui/icons/Grade';
 // core components
 import GridContainer from "components/Grid/GridContainer.js";

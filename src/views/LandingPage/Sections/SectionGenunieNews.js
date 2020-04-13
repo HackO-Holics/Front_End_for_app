@@ -1,20 +1,11 @@
 import React from "react";
 import { withStyles } from "@material-ui/core/styles";
 import workStyle from "assets/jss/material-kit-pro-react/views/landingPageSections/workStyle.js";
-import TrendingUp from "@material-ui/icons/TrendingUp";
 // core components
-import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
 import CardHeader from "components/Card/CardHeader.js";
 import CardBody from "components/Card/CardBody.js";
-import Info from "components/Typography/Info.js";
-import Success from "components/Typography/Success.js";
-import Danger from "components/Typography/Danger.js";
-
-import blog6 from "assets/img/examples/blog6.jpg";
-import blog8 from "assets/img/examples/blog8.jpg";
-import blog7 from "assets/img/examples/blog7.jpg";
 
 class GenNews extends React.Component {
     render() {
