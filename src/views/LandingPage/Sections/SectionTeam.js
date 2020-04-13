@@ -162,7 +162,7 @@ export default function SectionTeam() {
                     <div
                       className={classes.coloredShadow}
                       style={{
-                        backgroundImage: `url(${require('../../../assets/img/team/dpsmain.jpg')})`,
+                        backgroundImage: `url(${require('../../../assets/img/team/dpsmain2.jpg')})`,
                         opacity: "1"
                       }}
                     />
