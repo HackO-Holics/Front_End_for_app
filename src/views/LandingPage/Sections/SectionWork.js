@@ -78,7 +78,7 @@ class SectionWork extends React.Component {
             <GridItem cs={12} sm={12} md={12}>
               {this.state.loaded===1?(this.state.data.prediction===0?
                 (<div>
-                  <Animated animationIn='fadeIn' animationInDelay={600}>
+                  <Animated animationIn='fadeIn' animationInDelay={1200}>
                   <h3 className={classes.title + " " + classes.textCenter}>The News Entered was Genuine</h3><br/>
                   <h4 className={classes.title + " " + classes.textCenter}>Here are some more related news</h4>
                   </Animated>
@@ -114,7 +114,7 @@ class SectionWork extends React.Component {
               <Animated animationIn='fadeInDown' animationInDelay={600}>
               <GridContainer justify="center">
               {this.state.data.related_news.slice(0,3).map((x)=>{
-                  return (<SectionGenunieNews key={x.time} title={x.title} biliner={x.biliner} img={x.img} link={x.link}/>)
+                  return (<SectionGenunieNews key={x.link } title={x.title} biliner={x.biliner} img={x.img} link={x.link}/>)
               })}
               </GridContainer>
               </Animated>
