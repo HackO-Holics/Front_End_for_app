@@ -113,9 +113,9 @@ class SectionWork extends React.Component {
               <div>
               <Animated animationIn='fadeInDown' animationInDelay={600}>
               <GridContainer justify="center">
-              {this.state.data.related_news.slice(0,3).map((x)=>{
+              {this.state.data.related_news?this.state.data.related_news.slice(0,3).map((x)=>{
                   return (<SectionGenunieNews key={x.link } title={x.title} biliner={x.biliner} img={x.img} link={x.link}/>)
-              })}
+              }):(<h4>Sorry We Could find any news related the article entered</h4>)}
               </GridContainer>
               </Animated>
               </div>):null):null}
