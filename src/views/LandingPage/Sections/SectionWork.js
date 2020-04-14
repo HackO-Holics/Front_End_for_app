@@ -35,7 +35,7 @@ class SectionWork extends React.Component {
       loaded: 0
     })
     const data = {"message": this.state.message}
-    axios.post('https://fake-real-news-api.herokuapp.com/api', data).then(res=>{
+    axios.post('https://verify-fake-news-api.herokuapp.com/api', data).then(res=>{
       console.log(res.data)
       this.setState({
         data: res.data,
